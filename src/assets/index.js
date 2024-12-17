@@ -1,0 +1,16 @@
+import img from './img (1).jpg'
+import img2 from './img (2).jpg'
+import img3 from './img (3).jpg'
+import img4 from './img (4).jpg'
+import img5 from './img (5).jpg'
+import img6 from './img (6).jpg'
+import img7 from './img (7).jpg'
+import img8 from './img (8).jpg'
+import img9 from './img (9).jpg'
+import trip1 from './trip 1.jpg'
+import trip2 from './trip 2.jpg'
+import trip3 from './trip 3.jpg'
+import video2 from './video (2).mp4'
+import video from './video.mp4'
+
+export {img, img2, img3, img4, img5, img6, img7, img8, img9, trip1, trip2, trip3, video, video2};

@@ -1,0 +1,124 @@
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient( to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl( 0, 0%, 100%);
+    --blackColor: hsl( 201, 33%, 16%);
+    --textColor: hsl( 240, 4%, 36%);
+    --whiteColorDeam: hsl( 0, 0%, 93%);
+    --greyText: rgb( 190, 190, 190);
+    --inputColor: rgb( 239, 239, 239);
+    --bodyColor: rgb( 240, 240, 246);
+    --cardBG: rgb( 225, 225, 235);
+  }
+// MAIN STYLING ===================================================>
+
+  .mainAddLead{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    .container {
+      background-color: var(--cardBG);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+      width: 40%;
+      height: 30em;
+      border-radius: 10px;
+      box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+      position: relative;
+    
+    
+        .headingDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+    
+            h3{
+                color: black;
+            }
+            .heading {
+                font-size: 32px;
+                font-weight: 500;
+                color: var(--PrimaryColor);
+                margin-bottom: 1rem;
+            }
+
+            
+        }
+
+        .formDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 60%;
+            
+            form{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            
+            .detail {
+                width: 250px;
+                margin: 5px;
+                padding: 15px;
+                font-size: 15px;
+                color: var(--blackColor);
+                background-color: var(--inputColor);
+                border: none;
+                border-radius: 15px;
+        
+                &::placeholder{
+                    color: var(--textColor);
+                    border: 1px solid whitesmoke;
+                }
+        
+                &:focus{
+                    border: 1px solid whitesmoke;
+                }
+            }
+            
+            
+            .btn {
+                width: 30%;
+                height: 40px;
+                border: hidden;
+                border-radius: 20px;
+                color: var(--body-color);
+                font-weight: 600;
+                font-size: 16px;
+                margin: 10px 0px;
+                background-color: var(--title-color-light);
+        
+                &:hover{
+                    background-color: var(--PrimaryColor);
+                    cursor: pointer;
+                }
+            }
+            
+            #addLeadbtn{
+                text-decoration: none;
+                padding: 5px 15px;
+                margin-top: 1.5rem;
+                
+            }
+    
+            .errortxt {
+                color: red;
+                margin: 5px 0px;
+                font-family:serif;
+            }
+          }  
+        }
+   }
+  }
+
+  

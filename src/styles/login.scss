@@ -1,0 +1,156 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*===== VARIABLES CSS =====*/
+
+:root{
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient( to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl( 0, 0%, 100%);
+  --blackColor: hsl( 201, 33%, 16%);
+  --textColor: hsl( 240, 4%, 36%);
+  --whiteColorDeam: hsl( 0, 0%, 93%);
+  --greyText: rgb( 190, 190, 190);
+  --inputColor: rgb( 239, 239, 239);
+  --bodyColor: rgb( 240, 240, 246);
+  --cardBG: rgb( 225, 225, 235);
+}
+
+.loginContainer::-webkit-scrollbar{
+  display: none;
+}
+.loginContainer {
+  background-color: var(--cardBG);
+  width: 32.5%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  top: 2%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+.loginFormMain{
+  height: 550px;
+  width: 30%;
+
+  .loginHeading {
+    width: 56%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+  
+    h2{
+      color: var(--PrimaryColor);
+      margin-top: 1rem;
+    }
+
+    .loginHeader {
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      line-height: 35px;
+      color: var(--blackColor);
+    }
+
+    .detail {
+      width: 100%;
+      height: 48px;
+      margin: 5px;
+      padding: 15px;
+      font-size: 15px;
+      color: black;
+      border: 2px solid rgb(218, 214, 214);
+      border-radius: 15px;
+      background-color: var(--inputColor);
+    }
+    .detail:focus {
+      outline: none;
+    }
+
+
+    footer{
+      width: 100%;
+      p{
+        color: var(--blackColor);
+        font-size: 12px;
+      }
+
+      #logintext {
+        text-decoration: none;
+        position: relative;
+        top: 5px;
+        color: var(--PrimaryColor);
+      }
+    }
+  }
+
+}
+
+ 
+
+
+
+h4 {
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  left: -60px;
+  margin: 5px;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  border: hidden;
+  border-radius: 20px;
+  font-size: 18px;
+  margin: 5px 0px;
+}
+
+#signupbtn{
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.errortxt {
+  color: #069C54;
+  margin: 5px 0px;
+  font-family:serif;
+}
+
+.int {
+  background-color: var(--cardBG);
+  margin: 10px 0px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.int:hover{
+  background-color: var(--PrimaryColor);
+}
+
+
+@media (max-width: 650px) {
+  .loginContainer{
+    width: 87%;
+    height: 55%;
+  }
+  .loginContainer .loginHeader{
+    font-size: 25px;
+  }
+  .loginContainer .loginHeading{
+    width: 77%;
+  }
+  
+  
+}
